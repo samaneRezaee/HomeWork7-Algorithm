@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>HomeWork7_Algorithm</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SharedCore">
+      <HintPath>..\..\..\HW-L5-01-Algorithm\HomeWork6-Algorithm\SharedCore\bin\Debug\net8.0\SharedCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
