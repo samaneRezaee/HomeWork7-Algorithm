@@ -1,4 +1,5 @@
-﻿using HomeWork7_Algorithm.Task1_number_of_digit_;
+﻿using HomeWork7_Algorithm.task_3_sum_digit_;
+using HomeWork7_Algorithm.Task1_number_of_digit_;
 using HomeWork7_Algorithm.task2_is_prime_;
 using SharedCore;
 namespace HomeWork7_Algorithm
@@ -30,13 +31,19 @@ namespace HomeWork7_Algorithm
             //task2 IsPrime
             IsPrime isPrimeObj = new IsPrime();
             var inputNumToCheckIsPrime = GetInputs.getInputNum();
-            bool resultIsPrime=isPrimeObj.isPrime(inputNumToCheckIsPrime);
+            bool resultIsPrime = isPrimeObj.isPrime(inputNumToCheckIsPrime);
             if (resultIsPrime)
                 Console.WriteLine($"Input is a 'Prime Number' ");
             else
                 Console.WriteLine($"Input is not a prime number!!!");
             Console.WriteLine();
 
-        }
+            //task 3: sum digits
+            SumDigit sumDigit = new SumDigit();
+            var inputNumToSumDigit= GetInputs.getInputNum();
+            var resultNum = sumDigit.SumDigitNum(inputNumToSumDigit);
+            Console.WriteLine($"Sum of digits is: {resultNum}");
+
+        }//end of main method
     }
 }
